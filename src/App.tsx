@@ -14,9 +14,6 @@ const App = () => {
             <AddTodo />
             <div className='border-1 dark:border-gray-700 border-gray-300 rounded shadow-lg'>
                 <Todos />
-                <Todos />
-                <Todos />
-                <Todos />
             </div>
             <TodoFilter />
         </div>
