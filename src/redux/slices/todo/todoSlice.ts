@@ -14,15 +14,7 @@ interface TodoState {
 }
 
 const initialState: TodoState = {
-    todos: [
-        {
-            id: 'abc123',
-            todo: 'Hello',
-            completed: false,
-            createdAtDate: '17 Jan 2025',
-            createdAtTime: '5:49 AM',
-        },
-    ],
+    todos: [],
 };
 
 const currentDate = new Date()
@@ -55,11 +47,6 @@ export const todoSlice = createSlice({
                     todo.completed = !todo.completed
                 }
             } )
-            // state.todos = state.todos.map((todo) =>
-            //     todo.id === action.payload
-            //         ? { ...todo, completed: !todo.completed }
-            //         : todo
-            // );
         },
         deleteTodo: (state, action: PayloadAction<string>) => {
             state.todos = state.todos.filter(
@@ -76,9 +63,12 @@ export const todoSlice = createSlice({
                 }
             });
         },
+        loadTodoFromStorage: (state, action) => {
+            state.todos = action.payload
+        }
     },
 });
 
-export const { createTodo, completeTodo, deleteTodo, updateTodo } = todoSlice.actions;
+export const { createTodo, completeTodo, deleteTodo, updateTodo, loadTodoFromStorage } = todoSlice.actions;
 
 export default todoSlice.reducer;
