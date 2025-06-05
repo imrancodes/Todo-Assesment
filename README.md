@@ -1,4 +1,4 @@
-# TODO-ASSESSMENT
+# TODO APP
 
 *Empower your productivity, conquer your tasks effortlessly.*
 
@@ -33,7 +33,7 @@ Built with the tools and technologies:
 
 Todo-Assessment is a powerful developer tool designed to streamline the creation of todo applications with a modern tech stack, ensuring a responsive and efficient user experience.
 
-### 💡 Why Todo-Assessment?
+### 💡 Why Todo?
 
 This project simplifies the development of todo applications while promoting best practices. The core features include:
 
