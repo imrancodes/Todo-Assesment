@@ -1,54 +1,96 @@
-# React + TypeScript + Vite
+# TODO-ASSESSMENT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Empower your productivity, conquer your tasks effortlessly.*
 
-Currently, two official plugins are available:
+![Last Commit](https://img.shields.io/github/last-commit/imrancodes/todo-assesment)
+![TypeScript](https://img.shields.io/badge/typescript-90.67%25-blue)
+![Languages](https://img.shields.io/github/languages/count/imrancodes/todo-assesment)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with the tools and technologies:
 
-## Expanding the ESLint configuration
+![NPM](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📑 Table of Contents
+
+- [Overview](#overview)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
+
+---
+
+## 📌 Overview
+
+Todo-Assessment is a powerful developer tool designed to streamline the creation of todo applications with a modern tech stack, ensuring a responsive and efficient user experience.
+
+### 💡 Why Todo-Assessment?
+
+This project simplifies the development of todo applications while promoting best practices. The core features include:
+
+- 🧠 **Modern Tech Stack**: React, Redux, and Tailwind CSS for a responsive UI.
+- 🛡 **TypeScript Integration**: Ensures type safety and better code quality.
+- 🔄 **Centralized State Management**: Efficient state handling with Redux.
+- 🌓 **Dark/Light Mode Toggle**: Theme customization enhances UX.
+- ⚡ **Real-time Updates**: Instant UI changes via Redux integration.
+- 🚀 **Seamless Workflow**: Vite configuration for fast builds and hot module replacement.
+
+---
+
+## 🖼 Screenshots
+
+### 🌤 Light Mode
+
+![Light Mode](/src/assets/ss2.png)
+
+### 🌙 Dark Mode
+
+![Dark Mode](/src/assets/ss1.png)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Programming Language:** TypeScript
+- **Package Manager:** Npm
+
+---
+
+### Installation
+
+To get a local copy up and running, follow these steps:
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/imrancodes/Todo-Assesment
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Navigate to the project directory:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd Todo-Assesment
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+3. **Install Dependencies**
+
+```bash
+npm install
+```
+4. **Run the Project** 
+```bash
+npm run dev
 ```
